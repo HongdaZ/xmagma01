@@ -1,0 +1,2 @@
+useDynLib( xmagma01 )
+exportPattern("^[[:alpha:]]+")

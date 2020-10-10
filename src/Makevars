@@ -1,0 +1,13 @@
+CXX = g++
+PKG_CPPFLAGS += -I../inst/include/ \
+	-Wall -DADD_ -DHAVE_CUBLAS \
+	-I/usr/local/xmagma/include \
+	-I/usr/local/magma/include \
+	-I/usr/local/cuda-11.1/include \
+	-fopenmp
+PKG_LIBS += -L/usr/lib64/ \
+	-L/usr/local/xmagma/lib -lxmagma \
+	-L/usr/local/magma/lib -lmagma \
+	-L/usr/local/cuda-11.1/lib64 -lcublas -lcudart \
+	-L/usr/local/openblas/lib -lopenblas
+
